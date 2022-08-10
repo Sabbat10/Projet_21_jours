@@ -10808,7 +10808,7 @@ form .contact [type=text],
 form .contact [type=number] {
   padding-left: 10px;
   padding: 3px;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   outline: none;
 }
 form .contact p textarea {
@@ -10818,16 +10818,12 @@ form .contact p textarea {
   font-family: Arial, Helvetica, sans-serif;
 }
 form .contact [type=submit] {
-  padding-left: 10px;
-  padding: 8px;
-  font-size: 1.1rem;
+  width: 300px;
+  padding: 3px;
+  font-size: 1.5rem;
   outline: none;
   background-color: #003865;
   color: white;
-}
-
-.avis {
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
