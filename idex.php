@@ -1,12 +1,25 @@
 <?php
-require_once('controler/article.php');
+	
+require_once('controler/controller.php');
 
-if (isset($_GET['page'])) {
-	if ($_GET['page'] == "Acceuil") {
-		acceuil();
-	} else {
-		throw new Exception("Cette page n'existe pas ou a été suprimée.");
+try {
+
+	if (isset($_GET['page'])) {
+	
+		if ($_GET['page'] == "Acceuil") {
+			articleUser();
+
+		}elseif ($_GET['page'] == "avis") {
+			getAvis();
+		}else{
+			throw new Exception("Cette page n'existe pas ou a été suprimée.");
+		}
+
+	}else{
+		articleUser();
 	}
-} else {
-	acceuil();
+	
+} catch (Exception $e) {
+	$error = $e->getMessage();
+    require('view/errorView.php');
 }

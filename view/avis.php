@@ -1,11 +1,10 @@
 <?php
-$title = "Ajouter un avis";
-ob_start();
+	$title = "Ajouter un avis";
+	ob_start();
 
-require('header.php');
+	require('header.php');
 
 ?>
-
 <div class="container">
     <div class="row">
 
@@ -34,28 +33,12 @@ require('header.php');
                 </div>
             </form>
         </div>
-   <!-- note de l'auteur -->
-        <div class=" avis col-6 col-ms-12 m-5">
-              
-            <div class=" avis col-lg-8 col-ms-12 ms-5">
-                <p class="h5">Sabbat Lumpatshia</p>
-                <p>17/12/2022</p>
-                <p class="h5">3/ 5</p>
-                <p>Je suis content de toi mec</p>
-                <hr>
-            </div>
-            
-        </div>
     </div>
 </div>
 
 <?php 
+	$content = "Ajouter un avis";
+	require('base.php');
 
-$content = ob_get_clean();
-require('base.php');
-
-require('footer.php');
-?>
-<br>
-
-<br>
+	require('footer.php');
+ ?>
